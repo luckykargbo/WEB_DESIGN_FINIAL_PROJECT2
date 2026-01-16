@@ -1,2 +1,2 @@
-# WEB_DESIGN_FINIAL_PROJECT2
-OUR FINAL PROJECT
+# dit_02_Final_Project_web_design
+Web design  Final Project 

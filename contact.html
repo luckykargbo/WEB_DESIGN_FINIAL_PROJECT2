@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- CSS -->
+    <link rel="stylesheet" href=".css/lucky.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-futbol"></i>
+                Football Agency SL
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="matches.html">Matches</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+ <!-- Hero Section -->
+        <div class="hero">
+            <h1>Contact Us</h1>
+            <p>Get in touch with Football Agency Sierra Leone for player representation, transfers, and partnership opportunities.</p>
+        </div>
+        
+       <!-- Contact Methods -->
+<div class="contact-methods">
+
+    <!-- Call Us -->
+    <a href="tel:+23276123456" class="contact-card-link">
+        <div class="contact-card">
+            <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Speak directly with our agents for immediate assistance</p>
+            <p class="mt-3 font-bold text-lg">+232 73-623-761</p>
+        </div>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/23276123456" target="_blank" class="contact-card-link">
+        <div class="contact-card whatsapp">
+            <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>Chat with us for quick responses and document sharing</p>
+            <p class="mt-3 font-bold text-lg">+232 76 123 456</p>
+        </div>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info@footballagency.sl" class="contact-card-link">
+        <div class="contact-card email">
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>Send us detailed inquiries and documents</p>
+            <p class="mt-3 font-bold text-lg">kattyruth10@icloud.com</p>
+        </div>
+    </a>
+
+</div>
+
+        <!-- Contact Form and Map -->
+        <div class="contact-section">
+            <div class="contact-form">
+                <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    
+                    <div id="statusMessage" class="status-message"></div>
+                </form>
+            </div>
+            
+            <div class="contact-map">
+                <h2 class="text-2xl font-bold mb-6">Our Location</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7754!2d-13.2403!3d8.4765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105793b8f1b8c0c9%3A0x52963a5addd52a0d!2sFreetown%2C%20Sierra%20Leone!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="mt-6">
+                    <h3 class="font-bold mb-2">Address</h3>
+                    <p>Football House, 123 Sports Avenue</p>
+                    <p>Freetown, Sierra Leone</p>
+                    
+                    <h3 class="font-bold mt-4 mb-2">Working Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Football Agency Sierra Leone. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript (LOAD LAST) -->
+<script src="lucky.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Agency SL - Matches</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href=".css/lucky.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-futbol"></i>
+                Football Agency SL
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="players.html">Players</a></li>
+                        <li><a href="matches.html">Matches</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <h1 class="section-title">Match Center</h1>
+
+    <!-- Upcoming Matches -->
+    <section class="card">
+        <div class="card-header">
+            <h2 class="card-title">Upcoming Matches</h2>
+            <p class="card-subtitle">Next 30 fixtures</p>
+        </div>
+        <div class="card-body">
+            <div class="matches-grid" id="upcomingMatches"></div>
+        </div>
+    </section>
+
+    <!-- Match Results -->
+    <section class="card">
+        <div class="card-header">
+            <h2 class="card-title">Match Results</h2>
+            <p class="card-subtitle">Last 20 games</p>
+        </div>
+        <div class="card-body">
+            <div class="matches-grid" id="pastMatches"></div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="squad">Squad</button>
+        <button class="tab-btn" data-tab="transfers">Transfers</button>
+        <button class="tab-btn" data-tab="season">Season</button>
+    </div>
+
+    <!-- Squad -->
+    <div class="tab-content active" id="squad">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Squad Formation</h2>
+            </div>
+            <div class="card-body">
+                <div class="pitch-container"></div>
+                <ul id="playerList"></ul>
+            </div>
+        </div>
+    </div>
+
+ <!-- Transfers Tab -->
+        <div class="tab-content" id="transfers">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title"><i class="fas fa-exchange-alt"></i> Recent Transfers</h2>
+                    <p class="card-subtitle">Latest player movements</p>
+                </div>
+                <div class="card-body">
+                    <ul class="transfer-list" id="transferList">
+                        <!-- Transfer list will be populated -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Season Tab -->
+        <div class="tab-content" id="season">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title"><i class="fas fa-calendar-week"></i> Full Season Fixtures</h2>
+                    <p class="card-subtitle">Complete match schedule</p>
+                </div>
+                <div class="card-body">
+                    <div class="matches-grid" id="seasonMatches">
+                        <!-- Season matches will be populated -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+     <!-- Stadium Map Popup -->
+    <div class="stadium-map" id="stadiumMap">
+        <div class="map-content">
+            <div class="map-header">
+                <h3 class="map-title" id="mapTitle">Stadium Location</h3>
+                <button class="close-map" id="closeMap">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <iframe 
+                id="stadiumIframe" 
+                class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7754!2d-13.2403!3d8.4765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105793b8f1b8c0c9%3A0x52963a5addd52a0d!2sFreetown%2C%20Sierra%20Leone!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Football Agency Sierra Leone. All rights reserved.</p>
+    </footer>
+
+
+<!-- JavaScript (LOAD LAST) -->
+<script src="lucky.js"></script>
+
+</body>
+</html>
